@@ -43,7 +43,7 @@ with open(file_to_load) as election_data:
         candidate_name = row[2]
          
         if candidate_name not in candidate_options:
-        # Add the candidate name to the candidate list.
+        # Add the candidate name to the candidate list
             candidate_options.append(candidate_name)
             candidate_votes[candidate_name] = 0
         candidate_votes[candidate_name]+=1
